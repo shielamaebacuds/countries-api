@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 function App() {
   const [theme, setTheme] = useState(function () {
     const currentTheme = localStorage.getItem("theme");
-    return JSON.parse(currentTheme ? currentTheme : []);
+    return currentTheme ? JSON.parse(currentTheme) : "Dark";
   });
 
   const [keyword, setKeyword] = useState("");
@@ -50,7 +50,7 @@ function Flags({ keyword, filter }) {
       async function fetchData() {
         try {
           const res = await fetch(
-            keyword 
+            keyword
               ? `https://restcountries.com/v3.1/name/${keyword}`
               : `https://restcountries.com/v3.1/all `,
             {
@@ -86,7 +86,6 @@ function Flags({ keyword, filter }) {
     },
     [keyword, filter]
   );
-
 
   return (
     <>
