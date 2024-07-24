@@ -1,0 +1,29 @@
+/*FLAGS*/
+.container {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.countContainer {
+  padding: 20px 20px;
+  color: var(--text-color);
+  max-width: 1250px;
+  display: flex;
+  width: 100%;
+}
+
+.grid{
+  height: max-content;
+  min-height: 500px;
+  width: 1250px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+

@@ -3,7 +3,7 @@
   --text-color: hsl(200, 15%, 8%);
   --element-color: hsl(0, 0%, 100%);
   --input-color: hsl(0, 0%, 52%);
-  --white: hsl(0, 0%, 100%) ;
+  --white: hsl(0, 0%, 100%);
   --shadow-color: hsl(0, 7%, 84%);
 }
 
@@ -12,15 +12,10 @@
   --text-color: hsl(0, 0%, 100%);
   --element-color: hsl(209, 23%, 22%);
   --shadow-color: hsl(210, 24%, 13%);
-  --input-color:  hsl(0, 0%, 100%) ;
-
-
+  --input-color: hsl(0, 0%, 100%);
 }
 
-
-
-body{
+body {
   margin: 0;
   background-color: var(--bg-color);
-
 }

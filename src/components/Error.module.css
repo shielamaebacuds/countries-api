@@ -1,0 +1,21 @@
+.errorContainer{
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorContainer{
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.errorMessage{
+    font-size: 20px;
+    color: var(--text-color);
+    max-width: 700px;
+}
